@@ -1,0 +1,85 @@
+---
+import avatar from "../images/avatar.png"
+
+
+export interface Props {
+  heading?: string;
+  text?: string;
+  showExtra?: boolean;
+}
+
+const { heading = "Hi,I'm Sathish Kumar", text="Build Websites using HTML,CSS,Javascript,React,MongoDB", showExtra = false } = Astro.props as Props;
+---
+
+<section class="showcase">
+  <div class="showcase-text">
+    <img class="avatar" src={avatar} alt="image"/>
+    <h1 class="name">{heading}</h1>
+    <p>
+      {text}
+    </p>
+  </div>
+
+  {showExtra && <>
+    
+
+  <p class="showcase-demo">
+    <small>This is a demo website </small>
+  </p>
+  </>}
+
+
+
+</section>
+
+<style>
+  .name{  
+    margin-top: 50px;
+  }
+  .avatar{ 
+    border-radius:50px;
+   }
+  .showcase {
+  height: auto;
+  background-color: green;
+  background-image: linear-gradient(to bottom, var(--color-primary), rgb(15 23 42 / 0));
+  padding: 30px;
+}
+
+.showcase-blog {
+  min-height: 300px;
+}
+
+.showcase-text {
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.showcase h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.showcase p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.showcase-img {
+  text-align: center;
+}
+
+.showcase-img img {
+  border-radius: 10px;
+  margin: auto;
+}
+
+.showcase-demo {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+</style>
