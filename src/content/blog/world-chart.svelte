@@ -17,8 +17,8 @@
     let selectionIndex = 8
     $: selectedDensity = density[selectionIndex]
 
-    function activateSelection(num: number){
-        selectionIndex = num
+    function activateSelection(number){
+        selectionIndex = number
     }
 </script>
 
