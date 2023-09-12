@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import { Image } from "astro:assets";
 import avatar from "../images/avatar.png"
 ---
 
@@ -8,7 +8,7 @@ import avatar from "../images/avatar.png"
   <section class="page-content">
     <div class="container">
       <h2>About Me</h2>
-      <img class="avatar" src={avatar}/>
+      <Image class="avatar" src={avatar} alt="Profile-Photo"/>
       <p>
         I am a 19-year-old college student enrolled in the MSc Integrated program at Anna University, Chennai, specifically at the esteemed College of Engineering Guindy. My academic journey reflects a strong commitment to education and personal growth. I have already developed a solid grasp of MERN stack development, a modern web application framework encompassing MongoDB, Express.js, React, and Node.js. Additionally, I am proficient in Android app development, showcasing my ability to create functional and user-friendly mobile applications. Being part of Anna University, renowned for its academic excellence, underscores my dedication to learning. With a unique blend of technical skills, including MERN stack and Android development, I am poised to make a meaningful contribution in the ever-evolving tech landscape.
       </p>

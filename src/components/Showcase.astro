@@ -1,6 +1,9 @@
 ---
 import avatar from "../images/avatar.png"
 
+import { Image } from "astro:assets";
+import Index from "../pages/index.astro";
+
 
 export interface Props {
   heading?: string;
@@ -13,7 +16,7 @@ const { heading = "Hi,I'm Sathish Kumar", text="Build Websites using HTML,CSS,Ja
 
 <section class="showcase">
   <div class="showcase-text">
-    <img class="avatar" src={avatar} alt="image"/>
+    <Image class="avatar" src={avatar} alt="image"/>
     <h1 class="name">{heading}</h1>
     <p>
       {text}

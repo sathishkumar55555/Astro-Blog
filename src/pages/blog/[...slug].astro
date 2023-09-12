@@ -1,0 +1,48 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Showcase from '../../components/Showcase.astro';
+import Card from '../../components/Card.astro';
+import { Image } from "astro:assets";
+
+type Props = CollectionEntry<'blog'>;
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+
+<Layout title={post.data.title}>
+  <section class="page-content">
+    <div class="container">
+      <Card>
+        <a class="btn" href="/blog">Go Back</a>
+        <h2>{post.data.title}</h2>
+        {post.data.heroImage ?
+            <>
+                 <Image class="poster" src={post.data.heroImage} alt="image"/>
+                </a>
+            </> :
+            <>
+            </>}
+       
+        <Content />
+      </Card>
+    </div>
+  </section>
+</Layout>
+
+<style>
+    .poster{ 
+        width:100%;
+        height: 500px;
+     }
+</style>

@@ -1,0 +1,24 @@
+---
+const { page } = Astro.props;
+---
+
+<div >
+  {page.url.prev && (
+    <a class="btn change-page" href={page.url.prev} title="Go to Previous">
+      &larr; Prev
+    </a>
+  )}
+  {page.url.next && (
+    <a class="btn change-page" href={page.url.next} title="Go to Next">
+      Next &rarr;
+    </a>
+  )}
+</div>
+<style>
+  .change-page{  
+    float: right;
+    margin-right: 50px;
+    
+  }
+</style>
+

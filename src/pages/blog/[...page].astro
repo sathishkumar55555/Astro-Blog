@@ -1,0 +1,94 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Showcase from '../../components/Showcase.astro';
+import Card from '../../components/Card.astro';
+import Pagination from "@components/Pagination.astro";
+import { Image } from "astro:assets";
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await getCollection('blog');
+  const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
+
+  return paginate(sortedPosts, {
+    pageSize: 10,
+  });
+}
+const { page } = Astro.props;
+---
+
+
+<Layout title="Blog">
+   
+  <section class="page-content">
+   <div class="container">
+    {page.data.map((post: CollectionEntry<'blog'>) =>
+     <Card>
+
+<div class="contain">
+  
+  {post.data.heroImage ?
+ <>
+      <Image class="poster" src={post.data.heroImage} alt="image"/>
+     </a>
+ </> :
+ <>
+ </>}
+
+
+<div class="content">
+<div class="items">
+<h3>{post.data.title}</h3>
+ <p>{post.data.description}</p>	
+ <a class="btn" href={`/blog/${post.slug}`}>Read More</a>
+</div>
+</div>
+ 
+</div>
+
+ 
+
+
+</Card>
+
+)}
+    
+    <Pagination {page} />
+   </div>
+   
+   </section>
+   
+</Layout> 
+
+
+<style>
+ .containner{ 
+   display: flex;
+  }
+
+ .contain{  
+   display: flex;
+   
+
+   
+   
+ }
+ .content{ 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+  .items{ 
+   width: 80%;
+  height: 190px;
+  margin: 10px;
+  padding: 5px;
+  
+   }
+ .poster{  
+   width: 200px;
+   height: 200px;
+   border-radius: 15px;
+ }
+
+</style>
