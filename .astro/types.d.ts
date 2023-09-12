@@ -179,110 +179,152 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"2014_in_review.mdx": {
-	id: "2014_in_review.mdx";
-  slug: "2014-in-review";
+"USA-birth-rate.mdx": {
+	id: "USA-birth-rate.mdx";
+  slug: "U.S-Birth-Rate";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"24-hours-with-threads.mdx": {
-	id: "24-hours-with-threads.mdx";
-  slug: "24-hours-with-threads";
+"artic_meltdown.mdx": {
+	id: "artic_meltdown.mdx";
+  slug: "artic-meltdown";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"astro-image-update.mdx": {
-	id: "astro-image-update.mdx";
-  slug: "astro-experimental-image-and-mdx-update";
+"leopards.mdx": {
+	id: "leopards.mdx";
+  slug: "leopards";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"banning_ie6.mdx": {
-	id: "banning_ie6.mdx";
-  slug: "banning-ie6";
+"lion.mdx": {
+	id: "lion.mdx";
+  slug: "lion";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"font_awesome_is_awesome.mdx": {
-	id: "font_awesome_is_awesome.mdx";
-  slug: "font-awesome-is-awesome";
+"london_population.mdx": {
+	id: "london_population.mdx";
+  slug: "london-population";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"job-search-journey.mdx": {
-	id: "job-search-journey.mdx";
-  slug: "my-2023-job-search-journey";
+"post-1.mdx": {
+	id: "post-1.mdx";
+  slug: "blog-1";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"my-2020-react-startup-process.mdx": {
-	id: "my-2020-react-startup-process.mdx";
-  slug: "my-2020-react-startup-process";
+"post-10.mdx": {
+	id: "post-10.mdx";
+  slug: "blog-10";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"pie-chart.mdx": {
-	id: "pie-chart.mdx";
-  slug: "pie-chart";
+"post-11.mdx": {
+	id: "post-11.mdx";
+  slug: "blog-11";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"quick_ux_no-no.mdx": {
-	id: "quick_ux_no-no.mdx";
-  slug: "quick-ux-no-no";
+"post-12.mdx": {
+	id: "post-12.mdx";
+  slug: "blog-12";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"reactjs_tutorial_part_(interlude).mdx": {
-	id: "reactjs_tutorial_part_(interlude).mdx";
-  slug: "reactjs-tutorial-part-interlude";
+"post-13.mdx": {
+	id: "post-13.mdx";
+  slug: "blog-13";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"reactjs_tutorial_part_1.mdx": {
-	id: "reactjs_tutorial_part_1.mdx";
-  slug: "reactjs-tutorial-part-1";
+"post-14.mdx": {
+	id: "post-14.mdx";
+  slug: "blog-14";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"reactjs_tutorial_part_2.mdx": {
-	id: "reactjs_tutorial_part_2.mdx";
-  slug: "reactjs-tutorial-part-2";
+"post-15.mdx": {
+	id: "post-15.mdx";
+  slug: "blog-15";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"reactjs_tutorial_part_3.mdx": {
-	id: "reactjs_tutorial_part_3.mdx";
-  slug: "reactjs-tutorial-part-3";
+"post-16.mdx": {
+	id: "post-16.mdx";
+  slug: "blog-16";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"review-of-spotify-ai-dj.mdx": {
-	id: "review-of-spotify-ai-dj.mdx";
-  slug: "a-quick-review-of-spotify-ai-dj";
+"post-3.mdx": {
+	id: "post-3.mdx";
+  slug: "blog-3";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"wtf_recruiters_take_2.mdx": {
-	id: "wtf_recruiters_take_2.mdx";
-  slug: "wtf-recruiters-take-2";
+"post-4.mdx": {
+	id: "post-4.mdx";
+  slug: "blog-4";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"post-5.mdx": {
+	id: "post-5.mdx";
+  slug: "blog-5";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"post-6.mdx": {
+	id: "post-6.mdx";
+  slug: "blog-6";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"post-7.mdx": {
+	id: "post-7.mdx";
+  slug: "blog-7";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"post-8.mdx": {
+	id: "post-8.mdx";
+  slug: "blog-8";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"post-9.mdx": {
+	id: "post-9.mdx";
+  slug: "blog-9";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"post2.mdx": {
+	id: "post2.mdx";
+  slug: "blog-2";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
 };
 
@@ -294,5 +336,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }

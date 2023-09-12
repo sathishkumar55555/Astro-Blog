@@ -98,3 +98,34 @@ h3 {
     text-align: center;
   }
 }
+
+
+.containner{ 
+  display: flex;
+ }
+
+.contain{  
+  margin-top: 10px;
+  display: flex;
+  
+}
+.content{ 
+  margin-top: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ }
+ .items{ 
+  width: 80%;
+ height: 190px;
+ margin: 10px;
+ padding: 5px;
+ 
+  }
+.poster{  
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}

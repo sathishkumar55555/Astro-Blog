@@ -4,12 +4,10 @@ const blog = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     date: z.string(),
-    tags: z.array(z.string()),
+    tags: z.array(z.string()).optional(),
     draft: z.boolean().optional(),
     expires: z.boolean().optional(),
-    heroImage: image().refine((img) => img.width >= 1080, {
-      message: "Cover image must be at least 1080 pixels wide!",
-    }).optional(),
+    heroImage: image().optional(),
     unsplash: z.string().optional(),
     unsplashURL: z.string().optional(),
     description: z.string().optional(),

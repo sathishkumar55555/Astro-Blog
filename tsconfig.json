@@ -8,7 +8,13 @@
       "@data/*": ["src/data/*"],
       "@styles/*": ["src/styles/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      
+  
+  
     }
-  }
+  },
+  "files.watcherExclude": {
+    "**/*": true,
+    }
 }
