@@ -24,7 +24,26 @@
 
 <h1>London Population Data 2023</h1>
 <div id='flexbox'>
-    
+    <div style='text-align: center;'>
+        <div>
+            density of
+            <select bind:value={selectionIndex}>
+                {#each data as d,i}
+                    <option value={i}>{d.Name}</option>
+                {/each}
+            </select>
+            is {selectedDensity} per square km
+        </div>
+        <div>
+            scale the height:
+            <br>
+            <input type="range" min=10 max=600 bind:value={scaleFactor} id="heightslider">
+            <br>
+            scale the width:
+            <br>
+            <input type="range" min=500 max=3000 bind:value={barwidth} id="widthslider" >
+        </div>
+    </div>
     <div>
         <svg width={data.length * barwidth / 100} height={maxHeight} >
             <g >

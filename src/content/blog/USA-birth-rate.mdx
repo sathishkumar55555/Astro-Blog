@@ -5,7 +5,12 @@ slug: "U.S-Birth-Rate"
 heroImage: "@assets/blog/United.jpg"
 description: "U.S.Birth Rate Reached Another Historic Low in 2022"
 ---
+
 The COVID-19 pandemic led to an initial decrease in birth rates in the U.S. followed by a partially offsetting rebound, as we documented in our December 2021 Brookings post (based on birth counts through June 2021). A similar pattern of an initial, substantial decline in births followed by a rebound in births occurred in many other high-income countries as well. Now, three years after the declaration of the COVID public health emergency in the U.S. and with the benefit of many additional months of data, we take a final look at aggregate birth counts over the course of the pandemic and put that in the context of the long-term decline in U.S. births.
+
+import Chart from "./usa-chart.svelte";
+
+<Chart client:load/>
 
 Birth certificate data on all births in the U.S. through the end of 2021 reveal that the early months of the U.S. pandemic were associated with a drop in births, leading to an overall baby bust on the order of 100,000 fewer births than would have occurred based on pre-pandemic trends. We show in a longer research paper that births fell by more in states where COVID caseloads were (initially) relatively high and unemployment rate spikes were relatively large, consistent with a behavioral response to public health and economic conditions. Some of the drop in births came in the summer and early fall of 2020, too soon to reflect behavioral changes leading to fewer conceptions. This reduction is partially explained by a modest drop in the number of pregnant immigrant women entering the country.
 
@@ -30,10 +35,7 @@ Figure 1 plots total birth counts in the U.S. from 2016 through 2022, separately
 
 
 
-import Chart from "./pie-chart.svelte";
 
-
-<Chart/>
 
 
 Quarterly births have been steadily trending downward between 2016 and 2022, with significant deviations from trend during the years of the U.S. COVID pandemic. The existence of a “baby bust” period during the earlier part of the pandemic is obvious in the figures. For instance, births in 2021 Q1 are noticeably below the trendline. These births would have been conceived in 2020 Q2, when the pandemic first hit. Births in Q4 of 2020 are also well below the downward trend; some of these births were conceived around the time of the pandemic’s onset. We note, though, that births also fell in the third quarter of 2020. Those births almost certainly were conceived before the onset of the pandemic, a point we return to below.

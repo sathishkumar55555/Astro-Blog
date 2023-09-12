@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import ChartContainer from "../../charts/ChartContainer.svelte";
     import { accident } from "./accident.js";
   </script>
@@ -12,4 +12,4 @@
         yVars: ["Accidents", "Death"],
       }}
     />
-  </main>
+  </main> -->

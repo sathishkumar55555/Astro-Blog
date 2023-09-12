@@ -1,4 +1,4 @@
-module.exports.accident = [
+export default [
     {
       Year: 1948,
       Accidents: 396,

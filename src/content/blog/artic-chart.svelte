@@ -57,11 +57,6 @@
 	</svg>
 </div>
 
-<p>
-	Average September extent. Source: <a href="https://climate.nasa.gov/vital-signs/arctic-sea-ice/"
-		>NSIDC/NASA</a
-	>
-</p>
 
 <style>
 	.chart,
